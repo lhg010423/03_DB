@@ -8,12 +8,18 @@ ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
 -- CTRL + ENTER : 선택한 SQL 수행
 
 -- 사용자 계정 생성
-CREATE USER kh_lhg IDENTIFIED BY kh1234;
+CREATE USER workbook IDENTIFIED BY workbook;
 
 -- 사용자 계정에 권한 부여
-GRANT RESOURCE, CONNECT TO kh_lhg;
+GRANT RESOURCE, CONNECT TO workbook;
 
 -- 객체가 생성될 수 있는 공간 할당량 지정
-ALTER USER kh_lhg DEFAULT TABLESPACE SYSTEM QUOTA UNLIMITED ON SYSTEM;
+ALTER USER workbook DEFAULT TABLESPACE SYSTEM QUOTA UNLIMITED ON SYSTEM;
 --                                         무제한의 저장공간을 부여한다
+
+
+
+
+
+
 
