@@ -1,0 +1,2 @@
+DB설정
+윈도우 -> 설정 -> 연결 -> 연결 유형 -> Auto-commit by dafault 해제
