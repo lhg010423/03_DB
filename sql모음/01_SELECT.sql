@@ -225,10 +225,10 @@ WHERE EMAIL LIKE '___@_%' ESCAPE '@';
 -- 사번, 이름, 이메일, 부서코드, 입사일, 급여 조회
 SELECT EMP_ID, EMP_NAME, EMAIL, DEPT_CODE, HIRE_DATE, SALARY
 FROM EMPLOYEE
-WHERE EMAIL LIKE '____@_%' ESCAPE '@' AND
-      (DEPT_CODE = 'D9' OR DEPT_CODE = 'D6') AND
-      HIRE_DATE BETWEEN '1990-01-01' AND '2000-12-31' AND
-      SALARY >= 2700000;
+WHERE EMAIL LIKE '____@_%' ESCAPE '@'
+AND (DEPT_CODE = 'D9' OR DEPT_CODE = 'D6')
+AND HIRE_DATE BETWEEN '1990-01-01' AND '2000-12-31'
+AND SALARY >= 2700000;
 
      
 -- 연산자 우선순위
@@ -249,7 +249,7 @@ WHERE EMAIL LIKE '____@_%' ESCAPE '@' AND
 
 /* IN 연산자
  * 
- * - 비교하련느 값과 목록에 작성된 값 중
+ * - 비교하려는 값과 목록에 작성된 값 중
  * 일치하는 것이 있으면 조회하는 연산자
  * 
  * [작성법]

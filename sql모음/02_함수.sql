@@ -57,6 +57,7 @@ FROM DUAL; -- 양쪽 공백 제거
 SELECT TRIM(BOTH '#' FROM '#####안녕#####')
 FROM DUAL;
 
+
 ------------------------------------------------------------
 
 /* 숫자 관련 함수 */
@@ -69,7 +70,7 @@ FROM DUAL
 WHERE ABS(10) = ABS(-10); -- WHERE절 함수 작성 가능
 
 -- MOD(숫자 | 컬럼명, 숫자 | 컬럼명) : 나머지 값 반환
--- EMPLOYEE 테이블에서 사원의 월급을 100만월으로 나눴을 때 나머지 조회
+-- EMPLOYEE 테이블에서 사원의 월급을 100만원으로 나눴을 때 나머지 조회
 SELECT EMP_NAME, SALARY, MOD(SALARY, 1000000)
 FROM EMPLOYEE;
 
