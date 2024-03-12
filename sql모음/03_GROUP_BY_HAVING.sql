@@ -39,7 +39,7 @@ GROUP BY DEPT_CODE; --> DEPT_CODE가 같은 행끼리 하나의 그룹이 됨
 -- 직급코드가 같은 사람의 직급코드, 급여 평균, 인원 수를
 -- 직급코드 오름차순으로 조회
 
-SELECT JOB_CODE ROUND(AVG(SALARY)), COUNT(*)
+SELECT JOB_CODE, ROUND(AVG(SALARY)), COUNT(*)
 FROM EMPLOYEE
 GROUP BY JOB_CODE
 ORDER BY JOB_CODE;

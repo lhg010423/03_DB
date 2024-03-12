@@ -54,7 +54,7 @@ JOIN DEPARTMENT ON (DEPT_CODE = DEPT_ID);
 
 
 -- 1. 내부 조인(INNER JOIN) (= 등가 조인(EQUAL JOIN))
---> 연결된느 컬럼의 값이 일치하는 행들만 조인됨.
+--> 연결되는 컬럼의 값이 일치하는 행들만 조인됨.
 -- (== 일치하는 값이 없는 행은 조인에서 제외됨)
 
 -- 작성 방법은 크게 ANSI 구문과 오라클 구문으로 나뉘고
@@ -85,13 +85,13 @@ DEPT_ID|DEPT_TITLE|LOCATION_ID|
 -------+----------+-----------+
 D1     |인사관리부     |L1         |
 D2     |회계관리부     |L1         |
-D3     |마케팅부      |L1         |
+D3     |마케팅부       |L1         |
 D4     |국내영업부     |L1         |
 D5     |해외영업1부    |L2         |
 D6     |해외영업2부    |L3         |
 D7     |해외영업3부    |L4         |
 D8     |기술지원부     |L5         |
-D9     |총무부       |L1         |
+D9     |총무부         |L1         |
 
 LOCATION 테이블
 LOCAL_CODE|NATIONAL_CODE|LOCAL_NAME|
