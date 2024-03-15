@@ -6,3 +6,18 @@ CREATE TABLE TB_TEST (
 );
 
 SELECT * FROM TB_TEST;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
