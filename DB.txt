@@ -1,2 +1,12 @@
+Oracle 파일에 setup 클릭해서 다음 다음 눌러서 다운하고 초기 비번설정을 oracle 안틀리게 설정한다
+
+윈도우 검색창에 cmd 들어가고 명령 프롬프트가 뜨면 sqlplus 입력후 enter
+아이디 sys as sysdba
+비번 아까 설정한 oracle
+
+
+ORA-12541: 데이터베이스에 접속할 수 없습니다. %s에 리스너가 없습니다. (CONNECTION_ID=/tkPaWnLQdylXl4kDvzUiQ==)
+192.168.219.100
+
 DB설정
 윈도우 -> 설정 -> 연결 -> 연결 유형 -> Auto-commit by dafault 해제
